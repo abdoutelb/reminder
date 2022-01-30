@@ -9,11 +9,11 @@ send tickets via email to user based on user's preference.
 - [MySql](https://www.mysql.com/) - Database to hold tickets & Users.
 
 ## Features Implemented
-- After create a new ticket new notification with email send to related user
-- Successfull email devlivery update ticket with status
-- Define any upcomming notification service in NotifyHelper adding to `RegisterServices`
+- After create a new ticket new notification with email send to related user.
+- Successfull email devlivery update ticket with status.
+- Define any upcomming notification service in NotifyHelper adding to `RegisterServices` and implement `send` function.
 - create and save User and Ticket to database.
-- Can Activate / Deactivate user from console
+- Can Activate / Deactivate user from console.
 
 ## Installation
 

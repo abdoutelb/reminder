@@ -6,8 +6,8 @@ class EmailNotification
     def self.send(ticket)
         user = ticket.user
         sent_at = (user.prefered_time).to_i 
+        return "This ticket #{ticket.title} went to #{user.email}" if ENV['RAILS_ENV'] == 'test' 
         puts "This ticket #{ticket.title} went to #{user.email}"
-        return if ENV['RAILS_ENV'] == 'test' 
  
         data = '{
             "personalizations": [

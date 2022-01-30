@@ -5,7 +5,7 @@ class Ticket < ApplicationRecord
     belongs_to :user
 
     after_create do
-      NotifyHelper::Notifier.send_ticket(self) if self.user.send_due_date_reminder?
+      NotifyHelper.send_ticket(self) if self.user.send_due_date_reminder?
     end
 
     def sent
