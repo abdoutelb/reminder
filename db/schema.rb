@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2022_01_29_124008) do
     t.string "email"
     t.boolean "send_due_date_reminder"
     t.integer "send_due_reminder_interval"
-    t.date "due_date_reminder_time"
+    t.datetime "due_date_reminder_time"
     t.string "time_zone"
   end
 

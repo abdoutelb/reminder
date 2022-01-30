@@ -5,6 +5,10 @@ class User < ApplicationRecord
     def activate
         self.update(send_due_date_reminder: true)
     end
+
+    def prefered_time
+        self.due_date_reminder_time - self.send_due_reminder_interval.hours
+    end  
     
     def deactivate
         self.update(send_due_date_reminder: false)
