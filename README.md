@@ -8,6 +8,12 @@ send tickets via email to user based on user's preference.
 - [Send Grid](https://sendgrid.com/) - Send Grid to send Emails
 - [MySql](https://www.mysql.com/) - Database to hold tickets & Users.
 
+## Features Implemented
+- After create a new ticket new notification with email send to related user
+- Successfull email devlivery update ticket with status
+- Define any upcomming notification service in NotifyHelper adding to `RegisterServices`
+- create and save User and Ticket to database.
+- Can Activate / Deactivate user from console
 
 ## Installation
 
@@ -22,7 +28,10 @@ cd reminder
 
 ## Development
 To use the project in development mode
+copy `env.sample` file to `.env` and replace varibles inside
+
 ```sh
+cp env.sample .env
 rails c
 ```
 

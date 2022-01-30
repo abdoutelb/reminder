@@ -1,5 +1,6 @@
-require 'sendgrid-ruby'
+
 class EmailNotification 
+    require 'sendgrid-ruby'
     include SendGrid
 
     def self.send(ticket)
@@ -33,8 +34,7 @@ class EmailNotification
     
         sg = SendGrid::API.new(api_key: ENV['SENDGRID_API'])
         response = sg.client.mail._('send').post(request_body: JSON.parse(data))
-        puts "#{response.status_code}"
-        ticket.sent
+        ticket.sent if response.status_code.start_with?("20")
 
     end 
    
