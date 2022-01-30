@@ -1,24 +1,31 @@
-# README
+# Reminder
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+send tickets via email to user based on user's preference.
 
-Things you may want to cover:
+## Tech Used
+- [Ruby](https://www.ruby-lang.org/en/) - Ruby programming languge (2.6.6)
+- [Ruby On Rails](https://rubyonrails.org/) - Ruby on rails (5.2.6)
+- [Send Grid](https://sendgrid.com/) - Send Grid to send Emails
+- [MySql](https://www.mysql.com/) - Database to hold tickets & Users.
 
-* Ruby version
 
-* System dependencies
+## Installation
 
-* Configuration
+Dillinger requires [Ruby](https://www.ruby-lang.org/en/) v2.6.6 to run.
 
-* Database creation
+Install the dependencies and creating database.
 
-* Database initialization
+```sh
+cd reminder
+ ./bin/setup
+```
 
-* How to run the test suite
+## Development
+To use the project in development mode
+```sh
+rails c
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## License
 
-* Deployment instructions
-
-* ...
+MIT

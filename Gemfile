@@ -44,6 +44,7 @@ group :development, :test do
   gem 'factory_bot_rails','~>4.11.1'
   gem 'sendgrid-ruby'
   gem 'rspec-rails'
+  gem 'shoulda-matchers', '~> 5.0'
 end
 
 group :development do
