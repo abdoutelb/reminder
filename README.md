@@ -35,6 +35,12 @@ cp env.sample .env
 rails c
 ```
 
+To run tests
+```sh
+rspec
+```
+
+
 ## License
 
 MIT
